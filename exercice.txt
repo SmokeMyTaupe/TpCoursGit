@@ -1,0 +1,50 @@
+1) Ajouter un fichier à l'index :
+	- git add nomdufichier
+2) Commit avec un message :
+	- git commit -m "message"
+3) Pousser vos commits :
+	- git push 
+4) Récupérer les commits distants :
+	- git pull 
+5) Créer une nouvelle branche :
+	- git checkout -b nom-de-la-branche ou git branch nom-de-la-branche
+6) Changer de branche :
+	- git checkout nom-de-la-branche 
+7) Afficher l'historique des commits : 
+	- git log --oneline ou git log
+8) Récupérer les  commits d'une autre branche au sein de ma branche (merge) :
+	- git merge nom-de-la-branche
+9) Récupérer les commits d'une autre branche au sein de ma branche (rebase) :
+	- git rebase nom-de-la-branche
+10) Modifier mon dernier commit (toutes les commandes) :
+	- git rebase -i HEAD~X , -git revert HEAD 
+11) Modifier un commit de mon historique (toutes les commandes) :
+	- git rebase -i SHA1Commit~ ,  git revert SHA1Commit 
+12) Revenir à la version distante :
+	- git reset 
+13) Afficher les différences avec la version distante :
+	- git diff
+14) Squasher les 2 derniers commits :
+	- git diff ab5e..89vz, git ajs8..HEAD
+15) Stasher vos changements en local :
+	- git stash 
+16) Récupérer votre stash : 
+	- git stash pop
+17) Supprimer un commit : 
+	- git reset --hard <commit hash>
+18) Effectuer un commit de fixup : 
+	- git commit --amend ou git rebase -i origin/<branch>
+19) Modifier la première et dernière ligne d'un fichier & commiter uniquement la première ligne avec un commit partiel :
+	- nano nomdufichier
+	- modifier la première et dernière ligne 
+	- git stash -u -k
+	- gitpartial [master +0 ~1 -0]>
+
+
+
+
+
+
+
+
+
