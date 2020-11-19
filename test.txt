@@ -3,3 +3,4 @@ oui oui
 non non
 je suis un nouveau commit
 
+git rebase -i <SHA1>~
